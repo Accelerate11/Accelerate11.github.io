@@ -1,0 +1,5 @@
+{% assign project = include.project %}
+<figure class="project-figure project-repository-card">
+  <a href="{{ project.repo }}" target="_blank" rel="noopener noreferrer"><img src="{{ project.image | relative_url }}" width="1200" height="600" alt="{{ project.image_alt | escape }}" loading="lazy"></a>
+  <figcaption><a href="{{ project.repo }}" target="_blank" rel="noopener noreferrer">{{ project.repo | remove: 'https://github.com/' }}</a> · GitHub 仓库概览</figcaption>
+</figure>

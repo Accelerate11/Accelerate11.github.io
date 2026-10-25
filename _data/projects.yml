@@ -1,15 +1,15 @@
 - id: cuadc
   number: "01"
-  title: "CUADC 多旋翼无人机侦察与救援"
-  subtitle: "自主飞行与机载任务系统"
+  title: "2026CUADC"
+  subtitle: "多旋翼无人机侦察与救援任务系统"
   period: "2025.11 — 2026.10"
   role: "四旋翼项目负责人"
   description: "负责 C++ / ROS 2 / MAVROS 机载任务系统，串联自动起降、目标搜索、视觉对准、双载荷投放与航点侦察，完成仿真到外场的逐级验证。"
   highlight: "全国赛两机组一等奖 · 团体第四"
   tags: ["ROS 2", "MAVROS", "ArduPilot", "SITL"]
-  image: "/images/projects/cuadc-sim-detection.jpg"
-  image_alt: "CUADC 仓库中的仿真识别示例"
-  image_caption: "Gazebo 仿真识别示例"
+  image: "/images/projects/cuadc-github.png"
+  image_alt: "Accelerate11/2026CUADC GitHub 仓库概览"
+  image_caption: "2026CUADC · GitHub"
   url: "/projects/cuadc/"
   repo: "https://github.com/Accelerate11/2026CUADC"
   featured: true
@@ -22,36 +22,39 @@
   description: "将 MID-360 点云转换为 MAVLink 障碍距离，加入源时间戳、帧序列与超时恢复机制，完成台架及初步实飞链路验证。"
   highlight: "点云 → 72 扇区障碍距离 → ArduPilot"
   tags: ["MID-360", "MAVLink", "ArduPilot"]
-  image: "/images/projects/aerohalo-1.png"
-  image_alt: "AeroHalo360 在 Mission Planner 中显示周向障碍距离"
-  image_caption: "Mission Planner 障碍距离显示"
+  image: "/images/projects/aerohalo-github.png"
+  image_alt: "Accelerate11/AeroHalo360 GitHub 仓库概览"
+  image_caption: "AeroHalo360 · GitHub"
   url: "/projects/aerohalo/"
   repo: "https://github.com/Accelerate11/AeroHalo360"
   featured: true
 - id: mapper
   number: "03"
-  title: "MID360 Reliable Mapper"
+  title: "MID360-Reliable-Mapper"
   subtitle: "面向可靠输出的点云建图后处理"
   period: "开源实践"
   role: "可靠建图与栅格生成"
   description: "在 FAST-LIO2 输出后增加一致性门控，维护滑动窗口体素地图，融合射线自由空间与占据证据，生成二维栅格地图。"
   highlight: "一致性门控 · 滑动地图 · 二维占据栅格"
   tags: ["FAST-LIO2", "Point Cloud", "Occupancy Grid"]
-  image: "/images/projects/mapper-1.png"
-  image_alt: "Reliable Mapper 生成的走廊三维点云与二维栅格地图"
-  image_caption: "三维点云与二维栅格输出"
+  image: "/images/projects/mapper-github.png"
+  image_alt: "Accelerate11/MID360-Reliable-Mapper GitHub 仓库概览"
+  image_caption: "MID360 Reliable Mapper · GitHub"
   url: "/projects/reliable-mapper/"
   repo: "https://github.com/Accelerate11/MID360-Reliable-Mapper"
   featured: true
-- id: pinecone
+- id: impact
   number: "04"
-  title: "红松精灵 · 松果采摘特种无人机"
-  subtitle: "飞行平台、机械臂与视觉的系统集成"
-  period: "2025.10 — 2026.09"
-  role: "国家级大学生创新创业训练计划项目负责人"
-  description: "统筹飞行平台、机械臂与视觉模块，负责方案、上位机程序和整机联调；完成 Orin Nano、CUAV X7、MID360 与 ROS 2 平台集成及初号机试飞。"
-  highlight: "初号机试飞 · 视觉系统发明专利申请已受理"
-  tags: ["ROS 2", "Orin Nano", "系统集成"]
-  url: "/projects/pinecone/"
-  repo: "https://github.com/Accelerate11/Specialized-Pinecone-Harvesting-Drone"
-  featured: false
+  title: "IMPACT"
+  subtitle: "GNSS 拒止环境中的融合、规划与控制"
+  period: "开源研究"
+  role: "自主导航研究与开发"
+  description: "围绕无 GNSS 无人机导航，研究激光–惯性–视觉联合估计、完好性裕度规划与主动控制，整理仿真回放、数值核验和可复现研究入口。"
+  highlight: "多源融合 · 完好性裕度规划 · 可复现仿真"
+  tags: ["FAST-LIVO2", "ROS 2", "主动感知", "GNSS-denied"]
+  image: "/images/projects/impact-github.png"
+  image_alt: "Accelerate11/IMPACT GitHub 仓库概览"
+  image_caption: "IMPACT · GitHub"
+  url: "/projects/impact/"
+  repo: "https://github.com/Accelerate11/IMPACT"
+  featured: true

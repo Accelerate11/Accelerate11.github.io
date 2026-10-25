@@ -17,7 +17,6 @@ redirect_from: [/about/]
   <div class="section-heading"><h2 id="selected-projects">代表项目 <span>Selected Projects</span></h2><a href="{{ '/projects/' | relative_url }}">全部项目 <span aria-hidden="true">→</span></a></div>
   {% assign featured = site.data.projects | where: 'featured', true %}
   {% for project in featured %}{% include project-row.html project=project %}{% endfor %}
-  <a class="project-callout" href="{{ '/projects/pinecone/' | relative_url }}"><div><span class="callout-label">SYSTEM INTEGRATION</span><strong>红松精灵 · 松果采摘特种无人机</strong><p>国家级大创项目负责人 / 飞行平台、机械臂与视觉模块集成</p></div><span class="callout-arrow" aria-hidden="true">↗</span></a>
 </section>
 
 <section class="home-section" aria-labelledby="tech-stack">

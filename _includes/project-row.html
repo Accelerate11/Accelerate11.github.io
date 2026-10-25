@@ -1,7 +1,7 @@
 {% assign project = include.project %}
 <article class="project-row{% unless project.image %} project-row--text{% endunless %}">
   {% if project.image %}
-  <a class="project-thumbnail" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ project.image | relative_url }}" width="640" height="400" alt="" loading="lazy"><span>{{ project.image_caption }}</span></a>
+  <a class="project-thumbnail" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ project.image | relative_url }}" width="1200" height="600" alt="" loading="lazy"><span>{{ project.image_caption }}</span></a>
   {% else %}
   <div class="project-index" aria-hidden="true"><span>{{ project.number }}</span><small>SYSTEM<br>INTEGRATION</small></div>
   {% endif %}

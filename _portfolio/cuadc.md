@@ -1,7 +1,7 @@
 ---
 layout: profile
 author_profile: true
-title: "CUADC 多旋翼无人机侦察与救援"
+title: "2026CUADC · 多旋翼无人机侦察与救援"
 permalink: /projects/cuadc/
 eyebrow: "PROJECT / 01"
 subtitle: "机载任务系统、视觉投放与外场验证"
@@ -12,6 +12,9 @@ subtitle: "机载任务系统、视觉投放与外场验证"
   <span><strong>角色</strong> 哈工大航模协会四旋翼项目负责人</span>
   <span><strong>技术</strong> C++ · ROS 2 · MAVROS · ArduPilot</span>
 </div>
+
+{% assign project = site.data.projects | where: 'id', 'cuadc' | first %}
+{% include repository-card.html project=project %}
 
 ## 项目背景
 
@@ -26,11 +29,6 @@ subtitle: "机载任务系统、视觉投放与外场验证"
 ## 阶段成果
 
 团队获得 **2026 CUADC 北部赛区冠军**；全国赛两机组分别取得 **1338 分、1341 分，均获一等奖**，团体第四。公开仓库保留代码、备赛日志和技术文档，便于后续队员理解、调试和复现。
-
-<figure class="project-figure">
-  <img src="{{ '/images/projects/cuadc-sim-detection.jpg' | relative_url }}" alt="CUADC 仓库中的危险物标志仿真识别示例" loading="lazy">
-  <figcaption>仓库中的独立仿真识别示例。V16 实机任务的侦察阶段采用航点覆盖，未接入该危险物识别节点。</figcaption>
-</figure>
 
 [查看项目代码与备赛日志](https://github.com/Accelerate11/2026CUADC)
 
