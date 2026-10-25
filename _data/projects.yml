@@ -1,0 +1,57 @@
+- id: cuadc
+  number: "01"
+  title: "CUADC 多旋翼无人机侦察与救援"
+  subtitle: "自主飞行与机载任务系统"
+  period: "2025.11 — 2026.10"
+  role: "四旋翼项目负责人"
+  description: "负责 C++ / ROS 2 / MAVROS 机载任务系统，串联自动起降、目标搜索、视觉对准、双载荷投放与航点侦察，完成仿真到外场的逐级验证。"
+  highlight: "全国赛两机组一等奖 · 团体第四"
+  tags: ["ROS 2", "MAVROS", "ArduPilot", "SITL"]
+  image: "/images/projects/cuadc-sim-detection.jpg"
+  image_alt: "CUADC 仓库中的仿真识别示例"
+  image_caption: "Gazebo 仿真识别示例"
+  url: "/projects/cuadc/"
+  repo: "https://github.com/Accelerate11/2026CUADC"
+  featured: true
+- id: aerohalo
+  number: "02"
+  title: "AeroHalo360"
+  subtitle: "MID-360 与飞控之间的感知桥接"
+  period: "开源实践"
+  role: "感知链路开发与联调"
+  description: "将 MID-360 点云转换为 MAVLink 障碍距离，加入源时间戳、帧序列与超时恢复机制，完成台架及初步实飞链路验证。"
+  highlight: "点云 → 72 扇区障碍距离 → ArduPilot"
+  tags: ["MID-360", "MAVLink", "ArduPilot"]
+  image: "/images/projects/aerohalo-1.png"
+  image_alt: "AeroHalo360 在 Mission Planner 中显示周向障碍距离"
+  image_caption: "Mission Planner 障碍距离显示"
+  url: "/projects/aerohalo/"
+  repo: "https://github.com/Accelerate11/AeroHalo360"
+  featured: true
+- id: mapper
+  number: "03"
+  title: "MID360 Reliable Mapper"
+  subtitle: "面向可靠输出的点云建图后处理"
+  period: "开源实践"
+  role: "可靠建图与栅格生成"
+  description: "在 FAST-LIO2 输出后增加一致性门控，维护滑动窗口体素地图，融合射线自由空间与占据证据，生成二维栅格地图。"
+  highlight: "一致性门控 · 滑动地图 · 二维占据栅格"
+  tags: ["FAST-LIO2", "Point Cloud", "Occupancy Grid"]
+  image: "/images/projects/mapper-1.png"
+  image_alt: "Reliable Mapper 生成的走廊三维点云与二维栅格地图"
+  image_caption: "三维点云与二维栅格输出"
+  url: "/projects/reliable-mapper/"
+  repo: "https://github.com/Accelerate11/MID360-Reliable-Mapper"
+  featured: true
+- id: pinecone
+  number: "04"
+  title: "红松精灵 · 松果采摘特种无人机"
+  subtitle: "飞行平台、机械臂与视觉的系统集成"
+  period: "2025.10 — 2026.09"
+  role: "国家级大学生创新创业训练计划项目负责人"
+  description: "统筹飞行平台、机械臂与视觉模块，负责方案、上位机程序和整机联调；完成 Orin Nano、CUAV X7、MID360 与 ROS 2 平台集成及初号机试飞。"
+  highlight: "初号机试飞 · 视觉系统发明专利申请已受理"
+  tags: ["ROS 2", "Orin Nano", "系统集成"]
+  url: "/projects/pinecone/"
+  repo: "https://github.com/Accelerate11/Specialized-Pinecone-Harvesting-Drone"
+  featured: false

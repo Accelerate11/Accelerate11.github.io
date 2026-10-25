@@ -1,0 +1,17 @@
+{% include base_path %}
+<aside class="profile-author" aria-label="个人信息" itemscope itemtype="https://schema.org/Person">
+  <img class="profile-portrait" src="{{ base_path }}/images/{{ site.author.avatar }}" width="460" height="460" alt="{{ site.author.github }} 的 GitHub 头像" itemprop="image" fetchpriority="high">
+  <div class="profile-identity">
+    <h2 class="profile-name" itemprop="name">{{ site.author.name }}</h2>
+    <p class="profile-name-en" lang="en">{{ site.author.name_en }} <span class="profile-handle">/ {{ site.author.handle }}</span></p>
+    <p class="profile-role">{{ site.author.bio }}</p>
+    <p class="profile-affiliation" itemprop="affiliation">{{ site.author.employer }}<br><span>{{ site.author.education }}</span></p>
+  </div>
+  <ul class="profile-links">
+    <li><span class="link-marker" aria-hidden="true">⌖</span>{{ site.author.location }}</li>
+    <li><a href="mailto:{{ site.author.email }}"><span class="link-marker" aria-hidden="true">@</span><span>{{ site.author.email }}</span></a></li>
+    <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer"><svg class="inline-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.8-1.33-3.8-1.33-.52-1.3-1.26-1.65-1.26-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.64 1.22 3.28.93.1-.73.39-1.22.72-1.5-2.5-.29-5.13-1.25-5.13-5.57 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.8 10.8 0 0 1 5.64 0c2.15-1.46 3.1-1.15 3.1-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.33-2.63 5.28-5.14 5.56.4.35.76 1.04.76 2.1v3.09c0 .3.21.65.78.54A11.25 11.25 0 0 0 12 .75Z"/></svg><span>GitHub / {{ site.author.github }}</span><span class="external-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a href="{{ base_path }}{{ site.author.cv }}" download><span class="link-marker" aria-hidden="true">↓</span><span>公开版简历 <small>PDF</small></span></a></li>
+  </ul>
+  <p class="profile-note">无人机自主导航避障<br>人工智能<br>机器人与嵌入式系统</p>
+</aside>

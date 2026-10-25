@@ -1,0 +1,43 @@
+---
+permalink: /
+title: "关于我"
+eyebrow: "ROBOTICS & EMBEDDED SYSTEMS"
+subtitle: "无人机自主导航避障 · 人工智能 · 机器人系统"
+description: "姜云泽（accelerate），哈尔滨工业大学机器人工程本科生，关注无人机自主导航避障、人工智能及机器人与嵌入式系统。"
+redirect_from: [/about/]
+---
+<section class="intro-section" aria-label="个人简介">
+  <p class="intro-lead">我是<strong>姜云泽</strong>，也可以叫我 <strong>accelerate</strong>，哈尔滨工业大学机器人工程专业本科生。我关注<strong>机器人与嵌入式系统</strong>，希望把感知与控制算法带到真实的机器人系统中。</p>
+  <p>在航模协会担任四旋翼项目负责人期间，我负责 CUADC 无人机任务系统开发与外场联调，带队获得北部赛区冠军、全国赛两机组一等奖。目前也在围绕无人机自主导航避障，人工智能等领域展开相关研究和工作</p>
+  <div class="interest-line"><span>无人机自主导航避障</span><span>人工智能</span><span>机器人与嵌入式系统</span></div>
+  <p class="contact-line">欢迎交流无人机与机器人方向的科研、项目和实习机会。<a href="mailto:3062811267@qq.com">联系我 <span aria-hidden="true">↗</span></a></p>
+</section>
+
+<section class="home-section" aria-labelledby="selected-projects">
+  <div class="section-heading"><h2 id="selected-projects">代表项目 <span>Selected Projects</span></h2><a href="{{ '/projects/' | relative_url }}">全部项目 <span aria-hidden="true">→</span></a></div>
+  {% assign featured = site.data.projects | where: 'featured', true %}
+  {% for project in featured %}{% include project-row.html project=project %}{% endfor %}
+  <a class="project-callout" href="{{ '/projects/pinecone/' | relative_url }}"><div><span class="callout-label">SYSTEM INTEGRATION</span><strong>红松精灵 · 松果采摘特种无人机</strong><p>国家级大创项目负责人 / 飞行平台、机械臂与视觉模块集成</p></div><span class="callout-arrow" aria-hidden="true">↗</span></a>
+</section>
+
+<section class="home-section" aria-labelledby="tech-stack">
+  <div class="section-heading"><h2 id="tech-stack">技术与工具 <span>Tech Stack</span></h2></div>
+  <dl class="tech-stack">
+    <div><dt>机器人与仿真</dt><dd>ROS / ROS 2 · Gazebo · RViz · MAVROS / MAVLink</dd></div>
+    <div><dt>编程与系统</dt><dd>C++ · Python · Linux / Ubuntu</dd></div>
+    <div><dt>硬件与平台</dt><dd>NVIDIA Jetson · Raspberry Pi · APM / PX4</dd></div>
+  </dl>
+  <p class="learning-note">持续学习 ROS 2、NVIDIA Jetson 与 PX4 / APM 开发，欢迎交流机器人和自主系统项目。</p>
+</section>
+
+<section class="home-section" aria-labelledby="selected-honors">
+  <div class="section-heading"><h2 id="selected-honors">精选荣誉 <span>Honors</span></h2><a href="{{ '/honors/' | relative_url }}">完整列表 <span aria-hidden="true">→</span></a></div>
+  <ul class="honors-list compact-honors">{% assign honors = site.data.honors | where: 'featured', true %}{% for honor in honors %}
+    <li class="honor-row"><span class="honor-year">{{ honor.year }}</span><div><h3 class="honor-title">{{ honor.name }}</h3><p class="honor-result">{{ honor.result }}</p></div></li>
+  {% endfor %}</ul>
+</section>
+
+<section class="home-section education-section" aria-labelledby="education">
+  <div class="section-heading"><h2 id="education">教育背景 <span>Education</span></h2></div>
+  <div class="education-entry"><p class="education-summary">哈尔滨工业大学 · 本科 · 机器人工程专业</p></div>
+</section>

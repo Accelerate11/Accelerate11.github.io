@@ -1,0 +1,9 @@
+---
+permalink: /projects/
+title: "项目与开源实践"
+eyebrow: "SELECTED WORK"
+subtitle: "围绕自主飞行、机器人感知与系统集成开展的项目。"
+---
+<p class="page-intro">从比赛中的机载任务系统，到激光雷达感知链路与特种无人机平台，我的工作重点是让各个模块在真实硬件上稳定协作，并用仿真、台架和外场日志持续迭代。</p>
+<div class="all-projects">{% for project in site.data.projects %}{% include project-row.html project=project %}{% endfor %}</div>
+<div class="contact-panel"><h2>交流与合作</h2><p>如果你也在研究无人机自主飞行、LiDAR 感知或机器人系统，欢迎交流项目经验。</p><a href="mailto:3062811267@qq.com">3062811267@qq.com <span aria-hidden="true">↗</span></a></div>

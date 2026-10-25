@@ -1,0 +1,16 @@
+{% assign project = include.project %}
+<article class="project-row{% unless project.image %} project-row--text{% endunless %}">
+  {% if project.image %}
+  <a class="project-thumbnail" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ project.image | relative_url }}" width="640" height="400" alt="" loading="lazy"><span>{{ project.image_caption }}</span></a>
+  {% else %}
+  <div class="project-index" aria-hidden="true"><span>{{ project.number }}</span><small>SYSTEM<br>INTEGRATION</small></div>
+  {% endif %}
+  <div class="project-summary">
+    <p class="project-kicker">{{ project.subtitle }}</p>
+    <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+    <p class="project-description">{{ project.description }}</p>
+    <p class="project-highlight">{{ project.highlight }}</p>
+    <ul class="project-tags" aria-label="技术关键词">{% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+    <div class="project-links"><a href="{{ project.url | relative_url }}">项目详情 <span aria-hidden="true">→</span></a>{% if project.repo %}<a href="{{ project.repo }}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>{% endif %}</div>
+  </div>
+</article>

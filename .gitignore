@@ -1,0 +1,16 @@
+# Generated site and local build dependencies
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+/vendor/
+node_modules/
+package-lock.json
+
+# Local previews and editor files
+.openai/
+local/
+.vscode/
+.DS_Store
+
+# Gemfile.lock is intentionally tracked for reproducible builds.

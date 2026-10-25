@@ -1,0 +1,32 @@
+---
+layout: profile
+title: "荣誉与成果"
+eyebrow: "HONORS & ACHIEVEMENTS"
+permalink: /honors/
+subtitle: "竞赛荣誉与专利申请"
+---
+
+<section aria-labelledby="competition-honors">
+  <h2 id="competition-honors">精选竞赛荣誉</h2>
+  <ul class="honors-list">
+    {% for honor in site.data.honors %}
+    <li class="honor-row{% if honor.featured %} honor-row--featured{% endif %}">
+      <span class="honor-year">{{ honor.year }}</span>
+      <div class="honor-content">
+        <h3 class="honor-title">{{ honor.name }}</h3>
+        <p class="honor-result">{{ honor.result }}</p>
+        {% if honor.detail %}<p class="honor-detail">{{ honor.detail }}</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="patent-section" aria-labelledby="patent-application">
+  <h2 id="patent-application">专利申请</h2>
+  <h3>一种用于松果采摘作业平台的视觉系统及方法</h3>
+  <p><strong>发明专利申请 · 已受理</strong></p>
+  <p>列第二发明人。相关工作来自“红松精灵”松果采摘特种无人机项目，参与松果识别与模型微调实验。</p>
+</section>
+
+<p><a href="{{ '/projects/' | relative_url }}">了解项目与技术实践 <span aria-hidden="true">→</span></a></p>
